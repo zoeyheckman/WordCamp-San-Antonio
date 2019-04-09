@@ -8,9 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    </head>
-<body id="#home" data-spy="scroll" data-target=".navbar">
+<body id="home" data-spy="scroll" data-target=".navbar">
 	<!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav id=".navbar" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <div class="container">
     <a class="navbar-brand order-1 mr-0" href="#" target="_blank">Presented by NVC</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,28 +48,30 @@
 </div>
 <!-- /jumbotron -->
 <!-- about -->
-<div id="#about" class="row">
-  <div class="col-lg order-lg-2">
+<div id="about" class="row">
+  <div class="col-sm order-lg-2">
         <h3>About WordCamp</h3>
 	    <img src="https://via.placeholder.com/1024x436.png" alt="Photo of San Antonio, TX" class="img-fluid rounded">
 	    <p>The beautiful city of San Antonio, TX will be the host city for WordCamp!</p>
         <p>Explore the future of WordPress with a lineup of industry professionals. Discover new techniques to advance your career as a web designer.</p>         
     </div>                              
-  <div class="col-lg order-lg-1">          
+  <div class="col-sm order-lg-1">          
 		 <h3 class="mb-4">Expert Speakers</h3>         
          <p>Our expert speaker lineup was just announced, so don't wait too long before grabbing your tickets!</p>   <p>Want to meet the international WordPress community and share skills with some of the world's top experts and makers? Be the first to know what to expect for the future of WordPress.</p>
           <p>WordCamp is committed to being inclusive and welcoming for everyone. We look forward to another intensive day of learning and sharing.</p>        
 	 </div>               
-	 <div class="list-group">  
+	 <div class="col-sm order-lg-3">
+		  <div class="list-group">  
 		 <h3>What You'll Learn</h3>
          <a href="#" class="list-group-item list-group-item-action"><strong>WordPress 5</strong>: New Gutenberg editor</a>     
          <a href="#" class="list-group-item list-group-item-action"><strong>WooCommerce</strong>: E-commerce platform</a>         
          <a href="#" class="list-group-item list-group-item-action"><strong>Hosting</strong>: Managed web hosting</a> <a href="#" class="list-group-item list-group-item-action"><strong>Themes</strong>: Creating your theme</a> <a href="#" class="list-group-item list-group-item-action"><strong>Plugins</strong>: Develop your plugin</a> <a href="#" class="list-group-item list-group-item-action"><strong>Content</strong>: Writing and podcasts</a>      
+		 </div>
 	</div>      
 </div>             
 <!-- /about -->
 <!-- speakers -->
-<h2 id="#speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
+<h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
 <div class="row">
   <div class="col-md-6 col-lg-4">
 	  <div class="card mb-3">
@@ -128,7 +130,7 @@
 </div>
 <!-- /speakers -->
 <!-- schedule -->
-<h2 id="#schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
+<h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
 <ul class="list-group">
   <li class="list-group-item">
     <div class="d-flex justify-content-between">
@@ -207,28 +209,6 @@
     </div>
   </div>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-				data-toggle="modal" data-target="#register">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Modal -->
 <!-- /signup form -->
 <!-- footer -->
   <div class="row py-3">
@@ -262,6 +242,57 @@
     </div>
   </div>
 <!-- /footer -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="register">Register for WordCamp Conference</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+				data-toggle="modal" data-target="#register">
+        <form>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                 <label for="exampleFormControlSelect2">Example multiple select</label>
+                 <select multiple class="form-control" id="exampleFormControlSelect2">
+                     <option>1</option>
+                     <option>2</option>
+                     <option>3</option>
+                     <option>4</option>
+                     <option>5</option>
+                 </select>
+             </div>
+             <div class="form-group">
+                 <label for="exampleFormControlTextarea1">Example textarea</label>
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+             </div>
+        </form>
+			 <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
