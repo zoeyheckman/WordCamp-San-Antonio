@@ -47,6 +47,134 @@
   </div>
 </div>
 <!-- /jumbotron -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="register">Register for WordCamp Conference</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+				data-toggle="modal" data-target="#register">
+            <form>
+            <h2>Register for WordCamp</h2>
+		    <div class="alert alert-success fade-in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Hurry!</strong> Early bird registration ends in two days.
+            </div>
+		        <h2>Basic Info</h2>
+			<div id="Name">
+                   <h4>Name:</h4>
+				<input type="text" class="form-control">
+			</div>
+            <div class="form-group">
+                <h4>Email Address</h4>
+                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@gmail.com">
+            </div>
+		    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">WordPress Developer</a>
+    <a class="dropdown-item" href="#">Web Design Student</a>
+    <a class="dropdown-item" href="#">Curious Onlooker</a>
+  </div>
+</div>
+		<h2>Which Topics Interest You Most?</h2>
+		    <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                   <label class="form-check-label" for="defaultCheck1">
+                   WordPress Plugin
+                   </label>
+            </div>
+             <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="PHP">
+                   <label class="form-check-label" for="defaultCheck1">
+                   PHP
+                   </label>
+            </div>
+		     <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="CSS">
+                   <label class="form-check-label" for="defaultCheck1">
+                   CSS and Javascript
+                   </label>
+            </div>
+			     <h2>Payment Info</h2>
+		              <div class="form-group">
+                          <label class="col-md-4 control-label" for="AccountNo" id="AccountNo_label"><h4>Card Number</h4></label>
+                          <div class="col-md-5">
+                              <input id="AccountNo" name="AccountNo" type="tel" class="form-control input-md" required=""> 
+				              <span class="help-block" style="display: none;"></span> 
+                          </div>
+                          <div class="form-group">
+                              <label class="col-sm-4 control-label" for="CCMonth"><h4>Expiration Date</h4></label>
+                              <div class="col-md-5">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <select class="form-control col-sm-2" name="CCMonth" id="CCMonth">
+                            <option>Month</option>
+                            <option value="01" Selected>Jan (01)</option>
+                            <option value="02">Feb (02)</option>
+                            <option value="03">Mar (03)</option>
+                            <option value="04">Apr (04)</option>
+                            <option value="05">May (05)</option>
+                            <option value="06">June (06)</option>
+                            <option value="07">July (07)</option>
+                            <option value="08">Aug (08)</option>
+                            <option value="09">Sep (09)</option>
+                            <option value="10">Oct (10)</option>
+                            <option value="11">Nov (11)</option>
+                            <option value="12">Dec (12)</option>
+                        </select>
+                    </div>
+                    <div class="col-xs-3">
+                        <select class="form-control" name="CCYear">
+                            <option>Year</option>
+                            <option value="15" selected>2015</option>
+                            <option value="16">2016</option>
+                            <option value="17">2017</option>
+                            <option value="18">2018</option>
+                            <option value="19">2019</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                            <option value="28">2028</option>
+                            <option value="29">2029</option>
+                        </select>
+                    </div>
+                </div> 
+				      <span class="help-block" style="display: none;"></span> 
+           </div>
+      </div>
+</div>
+	         <div class="control-group">
+                    <label class="control-label">Zip Code</label>
+                    <div class="controls">
+                        <input id="zipcode" name="zip-code" type="text" class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+             </div>
+		
+			<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register"> Register Now </button>
+     </form>
+			 <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
 <!-- about -->
 <div id="about" class="row">
   <div class="col-sm order-lg-2">
@@ -187,13 +315,12 @@
 <div class="d-block">
 	<div class="mx-auto">
 		<div class="my-5">
-<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Don't Miss Out, Register Now</button> 
+<button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="register">Don't Miss Out, Register Now</button> 
 		</div>
 	</div>
 </div>	
 <!-- /callout button -->
 <!-- signup form -->
-
 <div class="row py-4 text-muted">
   <div class="col-md col-xl-5">
     <p><strong>About Northwest Vista College</strong></p>
@@ -242,57 +369,7 @@
     </div>
   </div>
 <!-- /footer -->
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="register">Register for WordCamp Conference</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-				data-toggle="modal" data-target="#register">
-        <form>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                 <label for="exampleFormControlSelect2">Example multiple select</label>
-                 <select multiple class="form-control" id="exampleFormControlSelect2">
-                     <option>1</option>
-                     <option>2</option>
-                     <option>3</option>
-                     <option>4</option>
-                     <option>5</option>
-                 </select>
-             </div>
-             <div class="form-group">
-                 <label for="exampleFormControlTextarea1">Example textarea</label>
-                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-             </div>
-        </form>
-			 <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /Modal -->
+
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
