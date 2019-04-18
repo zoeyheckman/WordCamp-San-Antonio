@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form action="/action_page.php">
+		<h1>Register for WordCamp</h1>
+		    <div class="alert alert-success fade-in">
+                <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                <strong>Hurry!</strong> Early bird registration ends in two days.
+            </div>
+		<h2>Basic Info</h2>
+		    <div class="form-group">
+                <label for="name">Name:</label>
+				<input type="text" class="form-control" id="Name">
+			</div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+		    </div>
+		    
+		    <h2>Which Topics Interest You Most?</h2>
+		    <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                   <label class="form-check-label" for="defaultCheck1">
+                   WordPress Plugin
+                   </label>
+            </div>
+             <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="PHP">
+                   <label class="form-check-label" for="defaultCheck1">
+                   PHP
+                   </label>
+            </div>
+		     <div class="form-check">
+                   <input class="form-check-input" type="checkbox" value="" id="CSS">
+                   <label class="form-check-label" for="defaultCheck1">
+                   CSS and Javascript
+                   </label>
+            </div>
+	 </form>
+	<h2>Payment Info</h2>
+     <form class="form-inline" action="/action_page.php">
+		    <div class="row col-lg-10">
+			<div class="col-sm-4 col-sm-4">
+			<div class="card-body form-group-col">
+				 <label class="control-label col-sm-7" for="AccountNo" id="AccountNo_label">Card Number</label>
+                <input id="AccountNo" name="AccountNo" type="tel" class="form-control col-sm-10" required=""> 
+				<span class="help-block" style="display: none;"></span> 
+			</div>
+			</div>
+            <div class="col-sm-4 col-sm-4">
+            <div class="card-body control-group-col">
+                 <label class="control-label col-sm-5">Zip Code</label>
+                <input id="zipcode" name="zip-code" type="text" class="col-md-10">
+                <p class="help-block"></p>
+       </div>
+  </div>
+		    <div class="col-sm-4 col-sm-4">
+		    <div class="card-body control-group-col-sm">
+                <label class="control-label col-sm-2">CVV</label>
+                <input type="text" class="form-control col-md-5" name="cvvNumber">
+			</div>
+            </div>
+			</div>
+		    <div class="row">
+		    <div class="col-md-10 col-md-10">
+			<div class="card-body control-group-col-md-10">
+				<label class="control-form col-sm-7">Expiration Date:</label>
+                <select class="form-control col-md-10" name="CCMonth" id="CCMonth">
+                            <option>Month</option>
+                            <option value="01">1-January</option>
+                            <option value="02">2-Febuary</option>
+                            <option value="03">3-March</option>
+                            <option value="04">4-April</option>
+                            <option value="05">5-May</option>
+                            <option value="06">6-June</option>
+                            <option value="07">7-July</option>
+                            <option value="08">8-August</option>
+                            <option value="09">9-September</option>
+                            <option value="10">10-October</option>
+                            <option value="11">11-November</option>
+                            <option value="12">12-December</option>
+                </select>
+		        <select class="form-control" name="CCYear">
+                            <option>Year</option>
+                            <option value="15">2015</option>
+                            <option value="16">2016</option>
+                            <option value="17">2017</option>
+                            <option value="18">2018</option>
+                            <option value="19">2019</option>
+                            <option value="20">2020</option>
+                            <option value="21">2021</option>
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                            <option value="28">2028</option>
+                            <option value="29">2029</option>
+                    </select>
+		            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4"/>
+		 </div>
+		 </div>
+		 <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#register">Register </button>
+</form>
+</body>
+</html>
